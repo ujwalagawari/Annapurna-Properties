@@ -1,0 +1,24 @@
+security:
+  oauth2:
+    client:
+      clientId: 91ae41cc2a47a598f40e
+      clientSecret: a6a2737b7c0bab8e40a618e39388734c5987322f
+      accessTokenUri: https://github.com/login/oauth/access_token
+      userAuthorizationUri: https://github.com/login/oauth/authorize
+      tokenName: oauth_token
+      authenticationScheme: query
+      clientAuthenticationScheme: form
+    resource:
+      userInfoUri: https://api.github.com/user
+
+  
+server:
+  port: 8081
+  
+spring:
+  data:
+    mongodb:
+      database: restaurant_db
+      
+  main:
+    allow-bean-definition-overriding: true
